@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" prefHeight="600.0" prefWidth="800.0">
+    <children>
+        <VBox spacing="10.0" layoutX="20.0" layoutY="20.0">
+            <Label text="Real-Time Scheduling Simulator" styleClass="header"/>
+            <GridPane hgap="10.0" vgap="10.0">
+                <Label text="Task ID:"/>
+                <TextField fx:id="taskIdField"/>
+                <Label text="Execution Time:"/>
+                <TextField fx:id="executionTimeField"/>
+                <Label text="Period:"/>
+                <TextField fx:id="periodField"/>
+                <Label text="Deadline:"/>
+                <TextField fx:id="deadlineField"/>
+                <Button text="Add Task" fx:id="addTaskButton"/>
+                <Button text="Remove Task" fx:id="removeTaskButton"/>
+            </GridPane>
+            <Button text="Start Simulation" fx:id="startSimulationButton"/>
+            <Button text="Pause Simulation" fx:id="pauseSimulationButton"/>
+            <Button text="Reset Simulation" fx:id="resetSimulationButton"/>
+            <Label fx:id="statusLabel" text="Status: Ready"/>
+        </VBox>
+    </children>
+</AnchorPane>
